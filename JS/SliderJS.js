@@ -148,3 +148,5 @@ function moveSlider(num) {
   sliderTimes.querySelector(".active").classList.remove("active");
   sliderTimes.querySelector(".n" + num).classList.add("active");
 }
+
+document.addEventListener("DOMContentLoaded" , initSlider(index));

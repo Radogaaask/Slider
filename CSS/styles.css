@@ -163,14 +163,14 @@
     color: #E3B873;
 }
 
-/* .slider_info__data-block_white {
+.slider_info__data-block_white {
     font-family: 'Nunito Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
-} */
+}
 
 /* .slider_nav__circle {
     width: 10px;
@@ -211,10 +211,12 @@
 	background-attachment: scroll;
     opacity: 0;
     transition: opacity 800ms ease-in-out;
+    display: none;
 }
 
 .slider_image .image.active {
     opacity: 1;
+    display: flex;
 }
 
 .slider_nav__arrow-left, .slider_nav__arrow-right {
@@ -266,15 +268,17 @@
 
 .projects__city, .projects__area, .projects__time {
     opacity: 0;
+    display: none;
 }
 
 .projects__city.active, .projects__area.active, .projects__time.active {
     margin-top: 9px;
-    font-size: 13px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
     font-weight: 400;
+    font-size: 13px;
     line-height: 21px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
+    color: #FFFFFF;
     opacity: 1;
+    display: flex;
 }
