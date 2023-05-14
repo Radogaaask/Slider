@@ -1,21 +1,21 @@
 // set objects with property image + title
 
 let images = [{
-  url: "../Images/Slide1",
+  url: "./Images/Slide1.png",
   title: "Rostov-on-Don, Admiral",
   city: "Rostov-on-Don",
   apart: "LCD admiral",
   area: "81 m2",
   time: "3.5 months"
 }, {
-  url: "../Images/Slide2",
+  url: "./Images/Slide2.png",
   title: "Sochi Thieves",
   city: "Sochi",
   apart: "Thieves",
   area: "105 m2",
   time: "4 months"
 }, {
-  url: "../Images/Slide3",
+  url: "./Images/Slide3.png",
   title: "Rostov-on-Don Patriotic",
   city: "Rostov-on-Don",
   apart: "Patriotic",
@@ -63,7 +63,7 @@ function initImages() {
 // function definition initArrows
 
 function initArrows() {
-  sliderArrows.querySelectorAll(".slider_nav").forEach(arrow => {
+  sliderArrows.querySelectorAll(".slider_nav__button").forEach(arrow => {
       arrow.addEventListener("click", function () {
           let currentNumber = +sliderImages.querySelector(".active").dataset.index;
           let nextNumber;
@@ -84,7 +84,7 @@ function initDots() {
       let dot = `<div class="slider_nav__dots n${index} ${index === 0 ? "active" : ""}" data-index="${index}"></div>`;
       sliderDots.innerHTML += dot;
   });
-  sliderDots.querySelectorAll(".slider_nav__circle").forEach(dot => {
+  sliderDots.querySelectorAll(".slider_nav__dots").forEach(dot => {
       dot.addEventListener("click", function () {
           moveSlider(this.dataset.index);
       });
