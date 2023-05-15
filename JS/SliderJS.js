@@ -108,7 +108,7 @@ function initLinks() {
 
 function initCitys() {
   images.forEach((elem, index) => {
-      let city = `<div class="projects__city n${index} ${index === 0 ? "active" : ""}" data-index="${index}">${images[index].city}<br>${images[0].apart}</div>`;
+      let city = `<div class="projects__city n${index} ${index === 0 ? "active" : ""}" data-index="${index}">${images[index].city}<br>${images[index].apart}</div>`;
       sliderCitys.innerHTML += city;
   });
 }
